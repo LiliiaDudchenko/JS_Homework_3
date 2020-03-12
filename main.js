@@ -3,19 +3,19 @@
 //1
 
 function sum(a, b) {
-  console.log(a + b);
+  return a + b;
 }
-sum(45, 6);
+console.log(sum(45, 6));
 
 function multiply(number) {
-  alert(number * number);
+  return number * number;
 }
-multiply(20);
+alert(multiply(20));
 
 function subtract(num1, num2) {
-  alert(num1 - num2);
+  return num1 - num2;
 }
-subtract(23, 4);
+alert(subtract(23, 4));
 
 function divide(nuM1, nuM2) {
   return nuM1 / nuM2;
@@ -55,10 +55,10 @@ function sumOdd(number3, sum3) {
 sumOdd(7, 0);
 
 //3.2
-function getMaxEven(nUmber) {
+function getMaxEven(number) {
   let z;
 
-  for (let i = 0; i <= nUmber; i++) {
+  for (let i = 0; i <= number; i++) {
     if (i % 2 == 0) {
       z = i;
     }
@@ -69,10 +69,10 @@ alert(getMaxEven(49));
 
 //3.3
 
-function getLastOdd(nUmber) {
+function getLastOdd(number) {
   let z;
 
-  for (let i = 0; i <= nUmber; i++) {
+  for (let i = 0; i <= number; i++) {
     if (i % 2 != 0) {
       z = i;
     }
@@ -83,8 +83,8 @@ alert(getLastOdd(490));
 
 //3.4
 
-function getMaxNumber(nuMber1, nuMber2, nuMber3) {
-  let tempArray = [nuMber1, nuMber2, nuMber3];
+function getMaxNumber(number1, number2, number3) {
+  let tempArray = [number1, number2, number3];
   let max = tempArray[0];
 
   for (let i = 1; i < 3; i++) {
@@ -98,8 +98,8 @@ alert(getMaxNumber(6, 9, 10));
 
 //3.5
 
-function getMinNumber(numBer1, numBer2, numBer3, numBer4, numBer5) {
-  let tempArray = [numBer1, numBer2, numBer3, numBer4, numBer5];
+function getMinNumber(number1, number2, number3, number4, number5) {
+  let tempArray = [number1, number2, number3, number4, number5];
   let min = tempArray[0];
 
   for (let i = 1; i < 5; i++) {
